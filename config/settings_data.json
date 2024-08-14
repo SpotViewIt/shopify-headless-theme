@@ -10,6 +10,7 @@
 {
   "current": {
     "storefront_hostname": "pinalli-website-uat.spotview.dev",
+    "custom_redirects": "\/collections\/* > \/*",
     "content_for_index": [
 
     ]
