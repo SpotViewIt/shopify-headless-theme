@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
   <head>
+    {% if template != 'checkout' %}
+      <meta name="robots" content="noindex, nofollow">
+    {% endif %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -247,15 +250,15 @@
       </div>
     {%- endif -%}
   </body>
-      <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        if (typeof window !== 'undefined' && window.location.href.includes('checkout')) {
-          console.log('Adding meta tag for robots');
-          var meta = document.createElement('meta');
-          meta.name = 'robots';
-          meta.content = 'noindex, nofollow';
-          document.getElementsByTagName('head')[0].appendChild(meta);
-        }
-      });
-    </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof window !== 'undefined' && window.location.href.includes('checkout')) {
+        console.log('Adding meta tag for robots');
+        var meta = document.createElement('meta');
+        meta.name = 'robots';
+        meta.content = 'noindex, nofollow';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
+    });
+  </script>
 </html>
