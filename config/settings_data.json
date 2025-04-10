@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "storefront_hostname": "prerelease.pinalli.it",
+    "storefront_hostname": "benufarma-website-uat.spotview.dev",
     "custom_redirects": "/collections/* > /",
     "content_for_index": []
   }
