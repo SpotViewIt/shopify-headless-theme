@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "storefront_hostname": "pinalli-headless-uat.spotview.dev",
+    "storefront_hostname": "pinalli-headless-uat.myshopify.com/",
     "custom_redirects": "/collections/* > /",
     "content_for_index": []
   }
